@@ -1,5 +1,5 @@
 {% set name = "glue-jupyter" %}
-{% set version = "0.22.1" %}
+{% set version = "0.22.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c5ad860f1730bf7125ccda5353baa6058762b5cd76c48c7a77d89dd77f85c076
+  sha256: 49a05c820b91918547038def2237212a6701c3e57071d6240c81dddaf7a2c09e
 
 build:
   noarch: python
