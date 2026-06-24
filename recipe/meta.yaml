@@ -20,14 +20,17 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - echo >=0.14.0
     - glue-core >=1.25.0
     - ipympl >=0.3.0
-    - ipyvolume >=0.5.0
-    - ipywidgets >=7.4.0
+    - ipyvolume >=0.6.0
+    - ipywidgets >=7.7.0
     - ipyvue >=1.2.0,<2
     - ipyvuetify >=1.2.0,<2
-    - bqplot-image-gl >=1.4.3
-    - bqplot >=0.12.17
+    - bqplot-image-gl >=1.9.2
+    - bqplot >=0.12.46
+    - bqplot-linlog >=0.2.0
+    - bqplot-gl
     - scikit-image
 
 test:
