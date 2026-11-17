@@ -11,27 +11,31 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools >=61.2
+    - setuptools-scm
   run:
     - python >={{ python_min }}
-    - echo >=0.14.0
-    - glue-core >=1.25.0
-    - ipympl >=0.3.0
+    - echo >=0.16.0
+    - glue-core >=1.28.0
+    - ipympl >=0.7.0
     - ipyvolume >=0.6.0
+    - ipython_genutils >=0.2
     - ipywidgets >=7.7.0
-    - ipyvue >=1.2.0,<2
-    - ipyvuetify >=1.2.0,<2
+    - ipyvuetify >=3.0.0
+    - six
+    - tornado >=6.2
     - bqplot-image-gl >=1.9.2
     - bqplot >=0.12.46
     - bqplot-linlog >=0.2.0
     - bqplot-gl
-    - scikit-image
+    - scikit-image >=0.23.1
 
 test:
   imports:
