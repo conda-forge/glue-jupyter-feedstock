@@ -1,13 +1,13 @@
 {% set name = "glue-jupyter" %}
-{% set version = "0.29.0" %}
+{% set version = "0.30.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b711ee9f7eb71b825b5f7d7d34afb732032721796f8be3f6be03993a8b63b391
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: c028e7bb020fdade4d951dbaa30f7c8ac9e3f52f445b88b68af3c921f2353d54
 
 build:
   noarch: python
